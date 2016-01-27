@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/focus_title_bar"></include>
+
+    <HorizontalScrollView
+        android:id="@+id/focus_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/focus_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/foucs_rb1"
+                    style="@style/radio_style"
+                    android:checked="true"
+                    android:text="新闻焦点" />
+
+                <RadioButton
+                    android:id="@+id/foucs_rb2"
+                    style="@style/radio_style"
+                    android:text="育儿我谈" />
+
+                <RadioButton
+                    android:id="@+id/foucs_rb3"
+                    style="@style/radio_style"
+                    android:text="快乐成长" />
+
+                <RadioButton
+                    android:id="@+id/foucs_rb4"
+                    style="@style/radio_style"
+                    android:text="家长心声" />
+
+                <RadioButton
+                    android:id="@+id/foucs_rb5"
+                    style="@style/radio_style"
+                    android:text="小朋友说" />
+
+                <RadioButton
+                    android:id="@+id/foucs_rb6"
+                    style="@style/radio_style"
+                    android:text="在线交流" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/foucs_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
